@@ -4,8 +4,8 @@
 =end
 
 require "test/unit"
-require "../app/trade/user"
-require "../app/trade/item"
+require "app/models/trade/user"
+require "app/models/trade/item"
 
 class UserTest < Test::Unit::TestCase
 
@@ -138,7 +138,7 @@ class UserTest < Test::Unit::TestCase
     assert_equal(user.items.slice(0).state, true)
     assert_equal(user.items.slice(1).state, false)
     assert_equal(user.items.slice(2).state, true)
-    assert_equal(user.list_active_items, "Active items:"+"Scarf"+"\n"+"TV"+"\n")
+    assert_equal(user.list_active_items, "Active items:"+"Scarf"+" Price: 10"+"\n"+"TV"+" Price: 1000"+"\n")
   end
 
 end

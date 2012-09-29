@@ -80,14 +80,16 @@ class User
     s = String.new("Active items:")
     for i in 0..(self.items.length-1)
       if (self.items.slice(i).state == true)
-        s = s + "#{self.items.slice(i).name}" + "\n"
+        s = s + "#{self.items.slice(i).name}" + " Price: " + "#{self.items.slice(i).price}"+"\n"
       end
     end
     s
   end
+
   def add_user_to_users
     @@users.push(self)
   end
+
   def self.users
     @@users
   end
