@@ -3,6 +3,18 @@
           Adrian Kurt 11-108-271
 =end
 
-class Main
-  # To change this template use File | Settings | File Templates.
+require 'tilt/haml'
+
+
+class Main < Sinatra::Application
+
+  get "/" do
+
+    redirect '/login' unless session[:name]
+
+    haml :list_users, :locals => { :time => Time.now ,
+                                      :users => User.all,
+                                      :current_name => session[:name] }
+  end
+
 end

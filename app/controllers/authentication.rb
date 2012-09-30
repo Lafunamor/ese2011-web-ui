@@ -4,7 +4,7 @@
 =end
 
 require 'tilt/haml'
-require 'app/models/trade/user'
+
 
 class Authentication < Sinatra::Application
   # To change this template use File | Settings | File Templates.
@@ -19,6 +19,10 @@ class Authentication < Sinatra::Application
     fail "Username is empty" if name.nil?
     fail "Password is empty" if password.nil?
 
-    user = Trade::User.by_name name
+    user = User.by_name name
+  end
+  get "/logout" do
+    session[:name] = nil
+    redirect '/login'
   end
 end
