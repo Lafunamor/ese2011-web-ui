@@ -29,11 +29,7 @@ module Trade
     end
 
     def buyable?
-      if (self.state == true)
-        true
-      else
-        false
-      end
+      self.state
     end
 
 

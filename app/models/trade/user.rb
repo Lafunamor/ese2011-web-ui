@@ -26,11 +26,7 @@ module Trade
     end
 
     def payable?(amount)
-      if (self.credits - amount >=0)
-        true
-      else
-        false
-      end
+      self.credits >= amount
     end
 
     def pay(amount)

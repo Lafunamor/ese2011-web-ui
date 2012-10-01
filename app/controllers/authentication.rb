@@ -20,7 +20,13 @@ class Authentication < Sinatra::Application
     fail "Password is empty" if password.nil?
 
     user = User.by_name name
+
+    fail "Username or password are not valid" if student.nil? or password != name
+
+    session[:name] = name
+    redirect '/'
   end
+
   get "/logout" do
     session[:name] = nil
     redirect '/login'
