@@ -1,0 +1,4 @@
+1.
+2. GET requests should be idempotent because it should only read data from resources thus it should
+have no side effects as changing the data.
+3.
