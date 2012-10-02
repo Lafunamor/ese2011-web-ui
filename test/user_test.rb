@@ -4,20 +4,20 @@
 =end
 
 require "test/unit"
-require "app/models/trade/user"
-require "app/models/trade/item"
+require "../app/models/trade/user"
+require "../app/models/trade/item"
 
 class UserTest < Test::Unit::TestCase
 
   def test_constructor
-    user = User.named("Lollys")
+    user = Trade::User.named("Lollys")
     assert_equal(user.name, "Lollys")
     assert_equal(user.credits, 100)
     assert_equal(user.items.size, 0)
   end
 
   def test_adding_items
-    user = User.named("Jane")
+    user = Trade::User.named("Jane")
     assert_equal(user.items.size, 0)
     user.add_item_to_system("Book", 30)
     assert_equal(user.items.size, 1)
@@ -29,9 +29,9 @@ class UserTest < Test::Unit::TestCase
   end
 
   def test_removing_items
-    user = User.named("Joe")
-    book = Item.new("Book", 30, "Joe")
-    scarf = Item.new("Scarf", 10, "Joe")
+    user = Trade::User.named("Joe")
+    book = Trade::Item.new("Book", 30, "Joe")
+    scarf = Trade::Item.new("Scarf", 10, "Joe")
     user.item_add(book)
     user.item_add(scarf)
     assert_equal(user.items.size, 2)
@@ -41,8 +41,8 @@ class UserTest < Test::Unit::TestCase
   end
 
   def test_activate_deactivate_item
-    user = User.named("Jane")
-    book = Item.new("Book", 30, "Jane")
+    user = Trade::User.named("Jane")
+    book = Trade::Item.new("Book", 30, "Jane")
     user.item_add(book)
     user.activate_for_sale(book)
     assert_equal(book.state, true)
@@ -51,22 +51,22 @@ class UserTest < Test::Unit::TestCase
   end
 
   def test_affordable
-    user = User.named("Jane")
-    book = Item.new("Book", 30, "Pete")
+    user = Trade::User.named("Jane")
+    book = Trade::Item.new("Book", 30, "Pete")
     assert(user.payable?(book.price), 'You have enough credits to buy the item.')
   end
 
   def test_receiving_money
-    user = User.named("Pete")
+    user = Trade::User.named("Pete")
     assert_equal(user.credits, 100)
     user.receive_money(50)
     assert_equal(user.credits, 150)
   end
 
   def test_buying_succeeds
-    seller = User.named("Pete")
-    buyer = User.named("Jack")
-    book = Item.new("Book", 20, seller)
+    seller = Trade::User.named("Pete")
+    buyer = Trade::User.named("Jack")
+    book = Trade::Item.new("Book", 20, seller)
     assert_equal(seller.items.size, 0)
     seller.item_add(book)
     assert_equal(seller.items.size, 1)
@@ -82,9 +82,9 @@ class UserTest < Test::Unit::TestCase
   end
 
   def test_not_for_sale
-    seller = User.named("Pete")
-    buyer = User.named("Jack")
-    book = Item.new("Book", 20, seller)
+    seller = Trade::User.named("Pete")
+    buyer = Trade::User.named("Jack")
+    book = Trade::Item.new("Book", 20, seller)
     assert_equal(seller.items.size, 0)
     seller.item_add(book)
     assert_equal(seller.items.size, 1)
@@ -96,9 +96,9 @@ class UserTest < Test::Unit::TestCase
   end
 
   def test_not_enough_credits
-    seller = User.named("Pete")
-    buyer = User.named("Jack")
-    book = Item.new("Book", 120, seller)
+    seller = Trade::User.named("Pete")
+    buyer = Trade::User.named("Jack")
+    book = Trade::Item.new("Book", 120, seller)
     assert_equal(seller.items.size, 0)
     seller.item_add(book)
     seller.activate_for_sale(book)
@@ -111,9 +111,9 @@ class UserTest < Test::Unit::TestCase
   end
 
   def test_just_enough_credits
-    seller = User.named("Pete")
-    buyer = User.named("Jack")
-    book = Item.new("Book", 100, seller)
+    seller = Trade::User.named("Pete")
+    buyer = Trade::User.named("Jack")
+    book = Trade::Item.new("Book", 100, seller)
     assert_equal(seller.items.size, 0)
     seller.item_add(book)
     assert_equal(seller.items.size, 1)
@@ -129,7 +129,7 @@ class UserTest < Test::Unit::TestCase
   end
 
   def test_listing_active_items
-    user = User.named("Joe")
+    user = Trade::User.named("Joe")
     user.add_item_to_system("Scarf", 10)
     user.add_item_to_system("Book", 30)
     user.add_item_to_system("TV", 1000)
