@@ -4,7 +4,7 @@
 =end
 
 require 'tilt/haml'
-require 'app/models/trade/user'
+require '../app/models/trade/user'
 
 class Authentication < Sinatra::Application
   # To change this template use File | Settings | File Templates.

@@ -5,6 +5,8 @@
 
 %a{:href => "/logout"} Logout
 %p
+  Last refresh: #{time.strftime("%H:%M:%S")}
+%p
 
 User: #{current_user.name}
 %p
@@ -49,15 +51,19 @@ Other Users:
         %tbody
           %tr
             %th{:width => "200"} Owner
+            %th{:width => "80"} Show User
             %th{:width => "200"} Name
-            %th{:width => "200"}
-              Credits
+            %th{:width => "200"} Credits
             %th{:width => "60"} Active
             %th{:width => "60"} Buy
-            %th{:width => "80"} Go to
+
         - for item in user.all_items
           %tr
             %td #{user.name}
+            %td
+              %form( action="/owner" method="POST" )
+                %input(type="hidden" name="user" value="#{user.name}")
+                %input(type="submit" value="show profile")
             %td #{item.name}
             %td #{item.price}
             %td
@@ -70,12 +76,10 @@ Other Users:
                 %input(type="hidden" name="owner" value="#{user.name}")
                 %input(type="hidden" name="item_name" value="#{item.name}")
                 %input(type="submit" value="buy")
-            %td
-              %a{:href => "/owner"} Go to #{user.name}
+
     - else
-      #{user.name} has no items ;(
+      #{user.name} has no items
 
 
-%hr
 
-  Time: #{time.strftime("%H:%M:%S")}
+

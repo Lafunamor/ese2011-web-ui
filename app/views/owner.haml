@@ -1,0 +1,24 @@
+%h1 Profile of #{owner.name}
+%p
+
+Credits: #{owner.credits}
+%p
+%p
+#{owner.name}'s Items:
+
+%table{:border => 1}
+  %tbody
+    %tr
+      %th{:width => "200"} Name
+      %th{:width => "200"} Credits
+      %th{:width => "60"} Active
+  - for item in owner.all_items
+    %tr
+      %td #{item.name}
+      %td #{item.price}
+      %td
+        - if item.buyable?
+          active
+        - else
+          inactive
+%a{:href=>"/"} Back

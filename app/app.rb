@@ -11,12 +11,14 @@
   require '../app/controllers/main'
   require '../app/controllers/authentication'
   require '../app/controllers/actions'
+  require '../app/controllers/owner'
 
   class App < Sinatra::Base
 
     use Authentication
     use Main
     use Actions
+    use Owner
 
     enable :sessions
     set :public_folder, 'app/public'
