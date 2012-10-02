@@ -20,6 +20,7 @@ Your Items:
       %th{:width => "200"}
         Credits
       %th{:width => "60"} Active
+      %th{:width => "60"} Activate
   - for item in current_user.all_items
     %tr
       %td #{item.name}
@@ -29,6 +30,12 @@ Your Items:
           active)
         - else
           inactive
+      %td
+        %form( action="/activate" method="POST" )
+          %input(type="hidden" name="item_name" value="#{item.name}")
+          %input(type="submit" value="activate")
+
+
 
 %p
 Other Users:
@@ -61,7 +68,6 @@ Other Users:
               %form( action="/buy" method="POST" )
                 %input(type="hidden" name="owner" value="#{user.name}")
                 %input(type="hidden" name="item_name" value="#{item.name}")
-                %input(type="hidden" name="price" value="#{item.price}")
                 %input(type="submit" value="buy")
     - else
       #{user.name} has no items ;(

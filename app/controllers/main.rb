@@ -17,4 +17,6 @@ class Main < Sinatra::Application
                                       :current_user => Trade::User.by_name(session[:name]) }
   end
 
+
+
 end

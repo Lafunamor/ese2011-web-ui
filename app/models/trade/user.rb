@@ -99,7 +99,7 @@ module Trade
     end
 
     def self.by_name name
-      @@users.detect { |student| student.name == name }
+      @@users.detect { |user| user.name == name }
     end
   end
 end

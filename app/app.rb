@@ -10,11 +10,13 @@
   require '../app/models/trade/item'
   require '../app/controllers/main'
   require '../app/controllers/authentication'
+  require '../app/controllers/actions'
 
   class App < Sinatra::Base
 
     use Authentication
     use Main
+    use Actions
 
     enable :sessions
     set :public_folder, 'app/public'
@@ -35,14 +37,30 @@
       john.add_item_to_system("Topf",12)
       john.add_item_to_system("Tasche_Gucci", 99)
 
+      for item in john.items
+        item.set_active
+      end
+
       berta.add_item_to_system("Stuhl", 50)
       berta.add_item_to_system("Tisch", 66)
+
+      for item in berta.items
+        item.set_active
+      end
 
       jamie.add_item_to_system("Schwert", 250)
       jamie.add_item_to_system("Schild", 33)
 
+      for item in jamie.items
+        item.set_active
+      end
+
       ese.add_item_to_system("Ruby_Buch", 0)
       ese.add_item_to_system("RubyMine Key", 22)
+
+      for item in ese.items
+        item.set_active
+      end
 
       ese2.add_item_to_system("ESE0",3)
       ese2.add_item_to_system("^^",66)
