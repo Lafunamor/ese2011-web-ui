@@ -12,8 +12,8 @@ class Main < Sinatra::Application
 
     redirect '/login' unless session[:name]
 
-    haml :list_users, :locals => { :time => Time.now ,
-                                      :users => User.all,
+    haml :home, :locals => { :time => Time.now ,
+                                      :users => Trade::User.all,
                                       :current_name => session[:name] }
   end
 
