@@ -1,6 +1,8 @@
-1.
+1. The Sinatra framework takes a HTTP request(method) combined with an URL-route and performs the
+request on the data which is found at the specified URL.
 
 2. GET requests should be idempotent because they should only read data from resources. Thus they
 should have no side effects as changing the data they access.
 
-3.
+3. Test data can be placed in a configure block in the app file and static files like images can
+be placed in a public folder so that they are being served directly in the app.
