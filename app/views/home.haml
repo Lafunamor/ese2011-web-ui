@@ -48,12 +48,13 @@ Other Users:
       %table{:border => 1}
         %tbody
           %tr
-            %th{:width => "200"} User
+            %th{:width => "200"} Owner
             %th{:width => "200"} Name
             %th{:width => "200"}
               Credits
             %th{:width => "60"} Active
             %th{:width => "60"} Buy
+            %th{:width => "80"} Go to
         - for item in user.all_items
           %tr
             %td #{user.name}
@@ -69,6 +70,8 @@ Other Users:
                 %input(type="hidden" name="owner" value="#{user.name}")
                 %input(type="hidden" name="item_name" value="#{item.name}")
                 %input(type="submit" value="buy")
+            %td
+              %a{:href => "/owner"} Go to #{user.name}
     - else
       #{user.name} has no items ;(
 
