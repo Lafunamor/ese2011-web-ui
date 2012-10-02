@@ -39,7 +39,7 @@
       user_name = session[:name]
 
       user =Trade::User.by_name(user_name)
-      item=owner.items.detect { |it| it.name == item_name }
+      item=user.items.detect { |it| it.name == item_name }
       item.set_active
 
       redirect "/"

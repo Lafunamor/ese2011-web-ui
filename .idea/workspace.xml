@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14cc4db7-e625-4de5-93df-493e2265a935" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/actions.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.rb" afterPath="$PROJECT_DIR$/app/app.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/main.rb" afterPath="$PROJECT_DIR$/app/controllers/main.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/trade/user.rb" afterPath="$PROJECT_DIR$/app/models/trade/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/actions.rb" afterPath="$PROJECT_DIR$/app/controllers/actions.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home.haml" afterPath="$PROJECT_DIR$/app/views/home.haml" />
     </list>
     <list id="c0723137-a267-49be-94f9-312e1b33535c" name="New changelist" comment="" />
@@ -36,10 +33,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="5" selection-start="393" selection-end="393" vertical-scroll-proportion="-1.5">
+            <state line="29" column="16" selection-start="535" selection-end="535" vertical-scroll-proportion="0.087248325">
               <folding />
             </state>
           </provider>
@@ -48,16 +45,16 @@
       <file leaf-file-name="actions.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/actions.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="28" selection-start="610" selection-end="610" vertical-scroll-proportion="0.0">
+            <state line="38" column="75" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/main.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="2" selection-start="446" selection-end="446" vertical-scroll-proportion="0.6828753">
+            <state line="19" column="2" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -82,11 +79,11 @@
         <option value="$PROJECT_DIR$/app/views/login.haml" />
         <option value="$PROJECT_DIR$/app/controllers/authentication.rb" />
         <option value="$PROJECT_DIR$/app/models/trade/user.rb" />
-        <option value="$PROJECT_DIR$/app/views/home.haml" />
         <option value="$PROJECT_DIR$/app/controllers/trade.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/actions.rb" />
         <option value="$PROJECT_DIR$/app/app.rb" />
         <option value="$PROJECT_DIR$/app/controllers/main.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/actions.rb" />
+        <option value="$PROJECT_DIR$/app/views/home.haml" />
       </list>
     </option>
   </component>
@@ -568,6 +565,7 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="added buy and activate" />
     <MESSAGE value="file upload" />
     <MESSAGE value="added more to login, changed buyable/payable according to corrections" />
     <MESSAGE value="answered question 2" />
@@ -665,9 +663,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/actions.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/main.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="28" selection-start="610" selection-end="610" vertical-scroll-proportion="0.0">
+        <state line="19" column="2" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -679,16 +677,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home.haml">
+    <entry file="file://$PROJECT_DIR$/app/controllers/actions.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="393" selection-end="393" vertical-scroll-proportion="-1.5">
+        <state line="38" column="75" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/main.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/home.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="2" selection-start="446" selection-end="446" vertical-scroll-proportion="0.6828753">
+        <state line="29" column="16" selection-start="535" selection-end="535" vertical-scroll-proportion="0.087248325">
           <folding />
         </state>
       </provider>
