@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14cc4db7-e625-4de5-93df-493e2265a935" name="Default" comment="few changes">
+    <list default="true" id="14cc4db7-e625-4de5-93df-493e2265a935" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/answers.txt" afterPath="$PROJECT_DIR$/answers.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.rb" afterPath="$PROJECT_DIR$/app/app.rb" />
     </list>
     <ignored path="ese2011-web-ui.iws" />
@@ -22,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="86" selection-start="444" selection-end="444" vertical-scroll-proportion="0.07751938">
+            <state line="47" column="2" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -49,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="answers.txt" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="answers.txt" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/answers.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="2" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
+            <state line="5" column="0" selection-start="165" selection-end="165" vertical-scroll-proportion="0.14910537">
               <folding />
             </state>
           </provider>
@@ -105,8 +106,8 @@
         <option value="$PROJECT_DIR$/app/models/trade/user.rb" />
         <option value="$PROJECT_DIR$/app/models/trade/item.rb" />
         <option value="$PROJECT_DIR$/app/controllers/authentication.rb" />
-        <option value="$PROJECT_DIR$/answers.txt" />
         <option value="$PROJECT_DIR$/app/app.rb" />
+        <option value="$PROJECT_DIR$/answers.txt" />
       </list>
     </option>
   </component>
@@ -461,18 +462,23 @@
       <created>1349124705761</created>
       <updated>1349124705761</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="few changes">
+      <created>1349197895782</created>
+      <updated>1349197895782</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="142" y="96" width="1183" height="671" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36363637" sideWeight="0.6731107" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36363637" sideWeight="0.6731107" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32688928" sideWeight="0.49691087" order="7" side_tool="true" content_ui="tabs" />
@@ -482,7 +488,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -594,13 +599,6 @@
         <state line="80" column="0" selection-start="2329" selection-end="2329" vertical-scroll-proportion="0.33123028" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/answers.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="2" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/user_test.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="81" selection-start="1591" selection-end="1591" vertical-scroll-proportion="1.001988" />
@@ -648,7 +646,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="86" selection-start="444" selection-end="444" vertical-scroll-proportion="0.07751938">
+        <state line="47" column="2" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/answers.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="165" selection-end="165" vertical-scroll-proportion="0.14910537">
           <folding />
         </state>
       </provider>

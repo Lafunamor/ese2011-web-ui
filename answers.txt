@@ -1,4 +1,6 @@
 1.
-2. GET requests should be idempotent because it should only read data from resources thus it should
-have no side effects as changing the data.
+
+2. GET requests should be idempotent because they should only read data from resources. Thus they
+should have no side effects as changing the data they access.
+
 3.
