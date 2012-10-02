@@ -6,10 +6,10 @@
   require 'rubygems'
   require 'sinatra'
   require 'tilt/haml'
-  require './models/trade/user'
-  require './models/trade/item'
-  require './controllers/main'
-  require './controllers/authentication'
+  require 'app/models/trade/user'
+  require 'app/models/trade/item'
+  require 'app/controllers/main'
+  require 'app/controllers/authentication'
 
   class App < Sinatra::Base
 
@@ -20,10 +20,10 @@
     set :public_folder, 'app/public'
 
     configure :development do
-      john = User.named("John")
-      berta =User.named("Berta")
-      jamie =User.named("Jamie")
-      ese = User.named("ESE")
+      john = Trade::User.named("John")
+      berta = Trade::User.named("Berta")
+      jamie = Trade::User.named("Jamie")
+      ese = Trade::User.named("ESE")
 
       john.save
       berta.save
