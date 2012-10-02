@@ -1,14 +1,14 @@
 %link(rel="stylesheet" type="text/css" href="/style.css")
 
-%h1 Welcome #{current_user.name}
+%h1 Welcome #{current_user}
 %p
-%img(src="good.gif")
+
 %a{:href => "/logout"} Logout
 %p
 
-%img(src="user.gif") #{current_user.name}
+User: #{current_user.name}
 %p
-%img(src="credits.gif") #{current_user.credits}
+Credits: #{current_user.credits}
 %p
 %p
 Your Items:
@@ -18,7 +18,7 @@ Your Items:
     %tr
       %th{:width => "200"} Name
       %th{:width => "200"}
-        %img(src="credits.gif")
+        Credits
       %th{:width => "60"} Active
   - for item in current_user.all_items
     %tr
@@ -26,12 +26,12 @@ Your Items:
       %td #{item.price}
       %td
         - if item.buyable?
-          %img(src="good.gif")
+          active)
         - else
-          %img(src="bad.gif")
+          inactive
 
 %p
-  %img(src="users.gif") Other Users:
+Other Users:
 %p
 
 - for user in users
@@ -44,7 +44,7 @@ Your Items:
             %th{:width => "200"} User
             %th{:width => "200"} Name
             %th{:width => "200"}
-              %img(src="credits.gif")
+              Credits
             %th{:width => "60"} Active
             %th{:width => "60"} Buy
         - for item in user.all_items
@@ -54,9 +54,9 @@ Your Items:
             %td #{item.price}
             %td
               - if item.buyable?
-                %img(src="good.gif")
+                active
               - else
-                %img(src="bad.gif")
+                inactive
             %td
               %form( action="/buy" method="POST" )
                 %input(type="hidden" name="owner" value="#{user.name}")

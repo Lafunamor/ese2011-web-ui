@@ -6,10 +6,10 @@
   require 'rubygems'
   require 'sinatra'
   require 'tilt/haml'
-  require 'app/models/trade/user'
-  require 'app/models/trade/item'
-  require 'app/controllers/main'
-  require 'app/controllers/authentication'
+  require '../app/models/trade/user'
+  require '../app/models/trade/item'
+  require '../app/controllers/main'
+  require '../app/controllers/authentication'
 
   class App < Sinatra::Base
 
@@ -24,11 +24,13 @@
       berta = Trade::User.named("Berta")
       jamie = Trade::User.named("Jamie")
       ese = Trade::User.named("ESE")
+      ese2 = Trade::User.named("ese")
 
       john.save
       berta.save
       jamie.save
       ese.save
+      ese2.save
 
       john.add_item_to_system("Topf",12)
       john.add_item_to_system("Tasche_Gucci", 99)
@@ -41,6 +43,9 @@
 
       ese.add_item_to_system("Ruby_Buch", 0)
       ese.add_item_to_system("RubyMine Key", 22)
+
+      ese2.add_item_to_system("ESE0",3)
+      ese2.add_item_to_system("^^",66)
 
 
     end
