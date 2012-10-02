@@ -25,7 +25,7 @@ Your Items:
       %td #{item.name}
       %td #{item.price}
       %td
-        - if item.active
+        - if item.buyable?
           %img(src="good.gif")
         - else
           %img(src="bad.gif")
@@ -53,7 +53,7 @@ Your Items:
             %td #{item.name}
             %td #{item.price}
             %td
-              - if item.active
+              - if item.buyable?
                 %img(src="good.gif")
               - else
                 %img(src="bad.gif")
