@@ -66,6 +66,7 @@
 
       ese2.add_item_to_system("ESE0",3)
       ese2.add_item_to_system("^^",66)
+      ese2.credits += 999999
 
 
     end

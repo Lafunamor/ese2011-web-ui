@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14cc4db7-e625-4de5-93df-493e2265a935" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/owner.haml" />
-      <change type="DELETED" beforePath="C:\Users\Lafu\Documents\ESE\ese2011-web-ui\app\views\own" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ese2011-web-ui.iml" afterPath="$PROJECT_DIR$/.idea/ese2011-web-ui.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.rb" afterPath="$PROJECT_DIR$/app/app.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/authentication.rb" afterPath="$PROJECT_DIR$/app/controllers/authentication.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/main.rb" afterPath="$PROJECT_DIR$/app/controllers/main.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/owner.rb" afterPath="$PROJECT_DIR$/app/controllers/owner.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home.haml" afterPath="$PROJECT_DIR$/app/views/home.haml" />
     </list>
     <list id="c0723137-a267-49be-94f9-312e1b33535c" name="New changelist" comment="" />
     <ignored path="ese2011-web-ui.iws" />
@@ -33,7 +26,7 @@
       <file leaf-file-name="app.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="0" selection-start="1578" selection-end="1578" vertical-scroll-proportion="2.648421">
+            <state line="68" column="28" selection-start="1575" selection-end="1575" vertical-scroll-proportion="0.7157895">
               <folding />
             </state>
           </provider>
@@ -62,10 +55,10 @@
         <option value="$PROJECT_DIR$/app/controllers/main.rb" />
         <option value="$PROJECT_DIR$/app/controllers/authentication.rb" />
         <option value="$PROJECT_DIR$/app/views/home.haml" />
-        <option value="$PROJECT_DIR$/app/app.rb" />
         <option value="$PROJECT_DIR$/app/views/test.haml" />
         <option value="$PROJECT_DIR$/app/controllers/owner.rb" />
         <option value="$PROJECT_DIR$/app/views/owner.haml" />
+        <option value="$PROJECT_DIR$/app/app.rb" />
       </list>
     </option>
   </component>
@@ -476,13 +469,18 @@
       <created>1349208160947</created>
       <updated>1349208160947</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="show profile">
+      <created>1349210973162</created>
+      <updated>1349210973162</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32746956" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -497,7 +495,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -538,7 +535,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="crrection for activate function" />
+    <option name="LAST_COMMIT_MESSAGE" value="show profile" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -567,6 +564,7 @@
     <MESSAGE value="and even more corrections" />
     <MESSAGE value="home.haml edited" />
     <MESSAGE value="crrection for activate function" />
+    <MESSAGE value="show profile" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -666,7 +664,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="0" selection-start="1578" selection-end="1578" vertical-scroll-proportion="2.648421">
+        <state line="68" column="28" selection-start="1575" selection-end="1575" vertical-scroll-proportion="0.7157895">
           <folding />
         </state>
       </provider>
