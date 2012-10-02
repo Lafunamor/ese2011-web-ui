@@ -14,7 +14,7 @@ class Main < Sinatra::Application
 
     haml :home, :locals => { :time => Time.now ,
                                       :users => Trade::User.all,
-                                      :current_user => session[:name] }
+                                      :current_user => Trade::User.by_name(session[:name]) }
   end
 
 end

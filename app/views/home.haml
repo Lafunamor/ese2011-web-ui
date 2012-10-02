@@ -1,15 +1,12 @@
 %link(rel="stylesheet" type="text/css" href="/style.css")
 
-%h1 Welcome #{current_user}
+%h1 Welcome #{current_user.name}
 %p
 %img(src="good.gif")
 %a{:href => "/logout"} Logout
 %p
-- if message != nil
-  %h2 #{message}
 
-
-%img(src="user.gif") #{current_user}
+%img(src="user.gif") #{current_user.name}
 %p
 %img(src="credits.gif") #{current_user.credits}
 %p
