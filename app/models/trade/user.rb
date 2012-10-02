@@ -11,8 +11,7 @@ module Trade
     attr_accessor :name, :credits, :items
 
     def self.named(name)
-      user = self.new(name)
-      user
+      self.new(name)
     end
 
     def initialize(name)
@@ -58,30 +57,19 @@ module Trade
     end
 
     def buy_from (item, user)
-      if (item.buyable? == true)
-        if (self.payable?(item.price) == true)
+      fail 'Not for sale' if not item.buyable?
+      fail 'Not enough money' if not payable?(item.price)
           user.item_remove(item)
           pay(item.price)
           user.receive_money(item.price)
           item_add(item)
           item.owner = self.name
           deactivate(item)
-        else
-          puts 'Sorry, but you don\'t have enough money to buy the item.'
-        end
-      else
-        puts 'Sorry, but the item isn\'t for sale.'
-      end
+
     end
 
     def list_active_items
-      s = String.new("Active items:")
-      for i in 0..(self.items.length-1)
-        if (self.items.slice(i).state == true)
-          s = s + "#{self.items.slice(i).name}" + " Price: " + "#{self.items.slice(i).price}"+"\n"
-        end
-      end
-      s
+     self.items.select{|i| i.buyable? == true}
     end
 
     def all_items

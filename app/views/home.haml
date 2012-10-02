@@ -79,6 +79,9 @@ Other Users:
 
     - else
       #{user.name} has no items
+      %form( action="/owner" method="POST" )
+        %input(type="hidden" name="user" value="#{user.name}")
+        %input(type="submit" value="show profile")
 
 
 
