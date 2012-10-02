@@ -84,6 +84,12 @@ module Trade
       s
     end
 
+    def all_items
+      item_list = Array []
+      items.each{|item| item_list.push(item)}
+      item_list
+    end
+
     def save
       @@users.push(self)
     end
