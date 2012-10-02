@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14cc4db7-e625-4de5-93df-493e2265a935" name="Default" comment="">
+    <list default="true" id="14cc4db7-e625-4de5-93df-493e2265a935" name="Default" comment="changed some things according to examples from lecture">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/answers.txt" afterPath="$PROJECT_DIR$/answers.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.rb" afterPath="$PROJECT_DIR$/app/app.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/authentication.rb" afterPath="$PROJECT_DIR$/app/controllers/authentication.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/main.rb" afterPath="$PROJECT_DIR$/app/controllers/main.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/login.haml" afterPath="$PROJECT_DIR$/app/views/login.haml" />
     </list>
+    <list id="c0723137-a267-49be-94f9-312e1b33535c" name="New changelist" comment="" />
     <ignored path="ese2011-web-ui.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,34 +29,25 @@
       <file leaf-file-name="app.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/app.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="2" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0">
+            <state line="22" column="40" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/trade/user.rb">
+      <file leaf-file-name="login.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/login.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="28" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+            <state line="14" column="43" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="authentication.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/authentication.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="52" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="answers.txt" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="answers.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/answers.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="165" selection-end="165" vertical-scroll-proportion="0.14910537">
+            <state line="7" column="79" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -71,16 +65,34 @@
       <file leaf-file-name="main.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/main.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="3" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
+            <state line="11" column="64" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="58" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0">
+            <state line="10" column="56" selection-start="187" selection-end="187" vertical-scroll-proportion="0.04918033">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/trade/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="28" selection-start="451" selection-end="451" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="authentication.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/authentication.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="30" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -100,20 +112,20 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/views/home.haml" />
-        <option value="$PROJECT_DIR$/app/views/login.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/main.rb" />
         <option value="$PROJECT_DIR$/test/user_test.rb" />
         <option value="$PROJECT_DIR$/app/models/trade/user.rb" />
         <option value="$PROJECT_DIR$/app/models/trade/item.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/authentication.rb" />
-        <option value="$PROJECT_DIR$/app/app.rb" />
         <option value="$PROJECT_DIR$/answers.txt" />
+        <option value="$PROJECT_DIR$/app/controllers/authentication.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/main.rb" />
+        <option value="$PROJECT_DIR$/app/app.rb" />
+        <option value="$PROJECT_DIR$/app/views/login.haml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="142" />
-    <option name="y" value="96" />
+    <option name="x" value="165" />
+    <option name="y" value="70" />
     <option name="width" value="1183" />
     <option name="height" value="671" />
   </component>
@@ -143,7 +155,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -250,6 +261,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -447,6 +459,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="14cc4db7-e625-4de5-93df-493e2265a935" name="Default" comment="" />
+      <changelist id="c0723137-a267-49be-94f9-312e1b33535c" name="New changelist" comment="" />
       <created>1348935162782</created>
       <updated>1348935162782</updated>
     </task>
@@ -466,19 +479,26 @@
       <created>1349197895782</created>
       <updated>1349197895782</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changed answer to nr.2">
+      <created>1349198275650</created>
+      <updated>1349198275650</updated>
+    </task>
+    <task id="LOCAL-00007" summary="answered question 1 and 3; needs to be checked">
+      <created>1349199702376</created>
+      <updated>1349199702376</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="142" y="96" width="1183" height="671" extended-state="0" />
-    <editor active="true" />
+    <frame x="165" y="70" width="1183" height="671" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32864675" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36363637" sideWeight="0.6731107" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39541042" sideWeight="0.6713533" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32688928" sideWeight="0.49691087" order="7" side_tool="true" content_ui="tabs" />
@@ -488,6 +508,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -528,7 +549,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="few changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed some things according to examples from lecture" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -547,18 +568,14 @@
     <MESSAGE value="small changes in app.rb" />
     <MESSAGE value="small changes" />
     <MESSAGE value="few changes" />
+    <MESSAGE value="changed answer to nr.2" />
+    <MESSAGE value="answered question 1 and 3; needs to be checked" />
+    <MESSAGE value="changed some things according to examples from lecture" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/app.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="50" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/main.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="9" selection-start="398" selection-end="398" vertical-scroll-proportion="0.0">
@@ -616,13 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/authentication.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="52" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/trade/item.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="16" selection-start="532" selection-end="532" vertical-scroll-proportion="0.0">
@@ -630,30 +640,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/main.rb">
+    <entry file="file://$PROJECT_DIR$/answers.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="3" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
+        <state line="7" column="79" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home.haml">
+    <entry file="file://$PROJECT_DIR$/app/controllers/authentication.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="58" selection-start="1156" selection-end="1156" vertical-scroll-proportion="0.0">
+        <state line="6" column="30" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/main.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="64" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/app.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="2" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.0">
+        <state line="22" column="40" selection-start="483" selection-end="483" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/answers.txt">
+    <entry file="file://$PROJECT_DIR$/app/views/login.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="165" selection-end="165" vertical-scroll-proportion="0.14910537">
+        <state line="14" column="43" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="56" selection-start="187" selection-end="187" vertical-scroll-proportion="0.04918033">
           <folding />
         </state>
       </provider>

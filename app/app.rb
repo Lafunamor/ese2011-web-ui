@@ -44,8 +44,7 @@
 
 
     end
-
+  end
 
 # Now, run it
-  App.run!
-end
+App.run!
