@@ -8,9 +8,6 @@ require '../app/models/trade/user'
 
 class Owner < Sinatra::Application
 
-  get "/owner" do
-    redirect '/'
-  end
 
   post "/owner" do
     if params[:user] == nil
