@@ -57,7 +57,7 @@ Other Users:
             %th{:width => "60"} Active
             %th{:width => "60"} Buy
 
-        - for item in user.all_items
+        - for item in user.list_active_items
           %tr
             %td #{user.name}
             %td
